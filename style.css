@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light: white;
+    --dark: black;
+    --shadow: #f7f7f7;
+    --primary: #1b72e8;
+    --secondary: #051e34;
+    -notifications: #ff8f00;
+}
+
+.color1 {
+    background-color:darkcyan;
+}
+
+.color2 {
+    background-color: lawngreen;
+}
+
+#site-nav {
+    height: 70px;
+}
+
+#wrapper {
+    height: calc(100vh - 70px);
+}
+
+#sidebar {
+    background-color: aquamarine;
+    height: 100%;
+}
+
+#main {
+    background-color: coral;
+    height: 100%;
+}
+
+#main_header {
+    height: 70px;
+}
+
+#maincontainer {
+    max-height: calc(100% - 70px);
+}
