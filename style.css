@@ -10,6 +10,7 @@
     --shadow: #f7f7f7;
     --primary: #1b72e8;
     --secondary: #051e34;
+    --badges: #165bba;
     -notifications: #ff8f00;
 }
 
@@ -40,7 +41,9 @@
 }
 
 #main_header {
-    height: 70px;
+
+    color: var(--light);
+    background-color: var(--primary);
 }
 
 #maincontainer {
@@ -49,4 +52,8 @@
 
 .ls_none {
     list-style: none;
+}
+
+.badge_bg {
+    background-color: var(--badges);
 }
