@@ -32,7 +32,6 @@
 
 #sidebar {
     background-color: var(--secondary);
-    height: 100%;
 }
 
 #main {
@@ -41,13 +40,8 @@
 }
 
 #main_header {
-
     color: var(--light);
     background-color: var(--primary);
-}
-
-#maincontainer {
-    max-height: calc(100% - 70px);
 }
 
 .ls_none {

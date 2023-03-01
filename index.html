@@ -15,10 +15,12 @@
 <!-- #region navbar -->    
     <nav id="site_nav" class="bg-light">
         <div class="container-fluid my-1">
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-between">
+
                 <div class="col-2">
                     <img src="./img/logo.svg" alt="" class="navbar-brand mw-100">
                 </div>
+
                 <div class="col-8">
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -27,6 +29,7 @@
                         <input type="search" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
+
                 <div class="col-2">
                     <ul class="navbar-nav flex-row d-none d-sm-flex">
                         <li><i class="fa-solid fa-list-ul "></i></li>
@@ -36,6 +39,7 @@
                     </ul>
                     <i class="fa-solid fa-bell px-2 d-sm-none"></i>
                 </div>
+
             </div>
         </div>
     </nav>
@@ -44,31 +48,37 @@
 <!-- region wrapper -->
     <div id="wrapper" class="row">
 <!-- sidebaar -->
-        <nav id="sidebar" class="text-white col-2 row g-0 justify-content-between">
-            <div id="sidebar_top" class="py-2">
-                <ul class="ls_none row">
-                    <li><i class="fa-solid fa-house my-2"></i><span class=""> Home</span></li>
-                    <li><i class="fa-solid fa-chart-simple my-2"></i><span> Stats</span></li>
-                    <li><i class="fa-solid fa-signal my-2"></i><span> Signals</span></li>
-                </ul>
-            </div>
-            <div id="sidebar_bot" class="mt-auto">
-                <ul class="ls_none row">
-                    <li class="align-items-end"><i class="fa-solid fa-gear my-2"></i><span> Admin</span></li>
-                </ul>
+        <nav id="sidebar" class="col-2">
+            <div class="container text-white h-100">
+                <div class="row justify-content-between h-100">
+                    <div id="sidebar_top">
+                        <ul class="ls_none row">
+                            <li><i class="fa-solid fa-house my-2"></i><span class=""> Home</span></li>
+                            <li><i class="fa-solid fa-chart-simple my-2"></i><span> Stats</span></li>
+                            <li><i class="fa-solid fa-signal my-2"></i><span> Signals</span></li>
+                        </ul>
+                    </div>
+                    <div id="sidebar_bot" class="mt-auto">
+                        <ul class="ls_none row">
+                            <li><i class="fa-solid fa-gear my-2"></i><span> Admin</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
+
 <!-- /sidebar -->
 
 <!-- main -->
         <div id="main" class="col-10">
-
-            <header id="main_header" class="d-flex">
-                <div>
+            <div class="row h-100">
+<!-- main header -->
+                <header id="main_header" class="col-12">
                     <div class="d-flex my-1">
                         <h1>Boolean</h1>
                         <span class="badge badge-pill badge_bg">Piano Blaze</span>
                     </div>
+<!-- /mainheader -->
                     <div class="d-flex my-1">
                         <span class="badge badge-pill badge_bg h-100 ">Primary</span>
                         <p>>></p>
@@ -76,16 +86,12 @@
                         <span class="badge badge-pill badge_bg">Primary</span>
                         <span class="badge badge-pill badge_bg">Primary</span>
                     </div>
+                </header>
+    
+                <section class="color1 col-8 h-100"></section>
+                <section class="color2 col-4 h-100"></section>
 
-                </div>
-
-
-            </header>
-
-            <main id="maincontainer" class="row h-100">
-                <div class="color1 col-8"></div>
-                <div class="color2 col-4"></div>
-            </main>
+            </div>
 
         </div>
     </div>
