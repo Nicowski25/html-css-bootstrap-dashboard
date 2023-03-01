@@ -10,16 +10,41 @@
     <link rel="stylesheet" href="./style.css">
     <title>Dashboard</title>
 </head>
-<body class="debug">
-    
-    <nav id="site-nav" class="bg-light">
-    </nav>
+<body>
 
+<!-- #region navbar -->    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+<!-- logo e search-->
+        <div class="d-flex">
+            <!-- Brand -->
+            <img src="./img/logo.svg" alt="" class="navbar-brand d-sm-flex">
+            <input type="search" class="form-control">
+        </div>
+<!-- icons -->
+        <ul class="navbar-nav flex-row d-none d-sm-flex">
+            <li><i class="fa-solid fa-list-ul "></i></li>
+            <li><i class="fa-solid fa-circle-question px-2"></i></li>
+            <li><i class="fa-solid fa-ellipsis-vertical px-2"></i></li>
+            <li><i class="fa-solid fa-bell px-2"></i></li>
+        </ul>
+        <i class="fa-solid fa-bell px-2 d-sm-none"></i>
+    </nav>
+<!-- #endregion navbar -->
+
+<!-- region wrapper -->
     <div id="wrapper" class="row">
-        <nav id="sidebar" class="col-2 row">
-            <div id="sidebar_top"></div>
+<!-- sidebaar -->
+        <nav id="sidebar" class="col-2 row g-0">
+            <div id="sidebar_top">
+                <ul >
+
+                </ul>
+            </div>
             <div id="sidebar_bot"></div>
         </nav>
+
+<!-- main -->
         <div id="main" class="col-10">
             <header id="main_header"></header>
             <main id="maincontainer" class="row h-100">
