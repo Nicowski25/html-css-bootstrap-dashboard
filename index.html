@@ -18,7 +18,8 @@
             <div class="row align-items-center justify-content-between">
 
                 <div class="col-2">
-                    <img src="./img/logo.svg" alt="" class="navbar-brand mw-100">
+                    <img class="d-none navbar-brand mw-100 d-lg-flex" src="./img/logo.svg" alt="">
+                    <img class="img-fluid d-lg-none" width="50px" src="./img/mobile-logo.png" alt="">
                 </div>
 
                 <div class="col-8">
@@ -31,7 +32,7 @@
                 </div>
 
                 <div class="col-2">
-                    <ul class="navbar-nav flex-row d-none d-sm-flex">
+                    <ul class="navbar-nav flex-row d-none d-sm-flex justify-content-end">
                         <li><i class="fa-solid fa-list-ul "></i></li>
                         <li><i class="fa-solid fa-circle-question px-2"></i></li>
                         <li><i class="fa-solid fa-ellipsis-vertical px-2"></i></li>
@@ -48,24 +49,24 @@
 <!-- region wrapper -->
     <div id="wrapper" class="row">
 <!-- sidebaar -->
-        <nav id="sidebar" class="text-white col-2 row g-0 justify-content-between">
+        <nav id="sidebar" class="text-white col-1 col-md-2 row g-0 justify-content-between justify-content-center">
             <div id="sidebar_top" class="py-2">
                 <ul class="ls_none row">
-                    <li><i class="fa-solid fa-house my-2"></i><span class=""> Home</span></li>
-                    <li><i class="fa-solid fa-chart-simple my-2"></i><span> Stats</span></li>
-                    <li><i class="fa-solid fa-signal my-2"></i><span> Signals</span></li>
+                    <li><i class="fa-solid fa-house my-2"></i><span class="d-none d-md-inline"> Home</span></li>
+                    <li><i class="fa-solid fa-chart-simple my-2"></i><span class="d-none d-md-inline"> Stats</span></li>
+                    <li><i class="fa-solid fa-signal my-2"></i><span class="d-none d-md-inline"> Signals</span></li>
                 </ul>
             </div>
             <div id="sidebar_bot" class="mt-auto">
                 <ul class="ls_none row">
-                    <li class="align-items-end"><i class="fa-solid fa-gear my-2"></i><span> Admin</span></li>
+                    <li class="align-items-end"><i class="fa-solid fa-gear my-2"></i><span class="d-none d-md-inline"> Admin</span></li>
                 </ul>
             </div>
         </nav>
 <!-- /sidebar -->
 
 <!-- main -->
-        <div id="main" class="col-10">
+        <div id="main" class="col-11 col-md-10">
             <div class="row h-100">
 <!-- main header -->
                 <header id="main_header" class="col-12">
@@ -73,7 +74,6 @@
                         <h1>Boolean</h1>
                         <span class="badge badge-pill badge_bg">Piano Blaze</span>
                     </div>
-<!-- /mainheader -->
                     <div class="d-flex my-1">
                         <span class="badge badge-pill badge_bg h-100 ">Primary</span>
                         <p>>></p>
@@ -82,7 +82,8 @@
                         <span class="badge badge-pill badge_bg">Primary</span>
                     </div>
                 </header>
-    
+                
+                <!-- /mainheader -->
                 <section class="color1 col-8 h-100"></section>
                 <section class="color2 col-4 h-100"></section>
 
