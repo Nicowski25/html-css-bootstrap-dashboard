@@ -47,9 +47,9 @@
 <!-- #endregion navbar -->
 
 <!-- region wrapper -->
-    <div id="wrapper" class="row">
+    <div id="wrapper" class="d-flex">
 <!-- sidebaar -->
-        <nav id="sidebar" class="text-white col-1 col-md-2 row g-0 justify-content-between justify-content-center">
+        <div id="sidebar" class="text-white d-flex flex-column g-0 justify-content-between justify-content-center">
             <div id="sidebar_top" class="py-2">
                 <ul class="ls_none row">
                     <li><i class="fa-solid fa-house my-2"></i><span class="d-none d-md-inline"> Home</span></li>
@@ -62,30 +62,43 @@
                     <li class="align-items-end"><i class="fa-solid fa-gear my-2"></i><span class="d-none d-md-inline"> Admin</span></li>
                 </ul>
             </div>
-        </nav>
+        </div>
 <!-- /sidebar -->
 
 <!-- main -->
-        <div id="main" class="col-11 col-md-10">
-            <div class="row h-100">
+        <div id="main" class="w-100">
+            <div class="h-100 flex-column flex-md-row text-white">
 <!-- main header -->
-                <header id="main_header" class="col-12">
-                    <div class="d-flex my-1">
-                        <h1>Boolean</h1>
-                        <span class="badge badge-pill badge_bg">Piano Blaze</span>
+                <div id="main_header">
+                    <div class="container-fluid">
+                        <div class="row flex-column flex-md-row py-2">
+
+                            <div class="col">
+                                <span class="h1">Boolean</span>
+                                <span class="badge badge_bg">Piano blaze</span>
+                                <div class="badges">
+                                    <span class="badge badge_bg my-2">3 app</span>
+                                    <span><i class="fa-solid fa-angles-right"></i></span>
+                                    <span class="badge badge_bg d-lg-none"><i class="fa-solid fa-plus"></i></span>
+                                    <span class="badge badge_bg d-none d-lg-inline">Boolean mobile app</span>
+                                    <span class="badge badge_bg d-none d-lg-inline">Boolean web app</span>
+                                    <span class="badge badge_bg d-none d-lg-inline">Boolean blog app</span>
+                            </div>
+
+                            
+                        </div>
                     </div>
-                    <div class="d-flex my-1">
-                        <span class="badge badge-pill badge_bg h-100 ">Primary</span>
-                        <p>>></p>
-                        <span class="badge badge-pill badge_bg">Primary</span>
-                        <span class="badge badge-pill badge_bg">Primary</span>
-                        <span class="badge badge-pill badge_bg">Primary</span>
-                    </div>
-                </header>
+                </div>
                 
-                <!-- /mainheader -->
-                <section class="color1 col-8 h-100"></section>
-                <section class="color2 col-4 h-100"></section>
+ <!-- /mainheader -->
+                <div class="main-content">
+                    <div class="container">
+                        <div class="row">
+                            <section class="color1 col-8"></section>
+                            <section class="color2 col-4"></section>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
