@@ -52,9 +52,9 @@
         <div id="sidebar" class="text-white d-flex flex-column g-0 justify-content-between justify-content-center">
             <div id="sidebar_top" class="py-2">
                 <ul class="ls_none row">
-                    <li><i class="fa-solid fa-house my-2"></i><span class="d-none d-md-inline"> Home</span></li>
-                    <li><i class="fa-solid fa-chart-simple my-2"></i><span class="d-none d-md-inline"> Stats</span></li>
-                    <li><i class="fa-solid fa-signal my-2"></i><span class="d-none d-md-inline"> Signals</span></li>
+                    <li><i class="fa-solid fa-house my-2"></i><span class="d-none d-lg-inline"> Home</span></li>
+                    <li><i class="fa-solid fa-chart-simple my-2"></i><span class="d-none d-lg-inline"> Stats</span></li>
+                    <li><i class="fa-solid fa-signal my-2"></i><span class="d-none d-lg-inline"> Signals</span></li>
                 </ul>
             </div>
             <div id="sidebar_bot" class="mt-auto">
@@ -67,13 +67,13 @@
 
 <!-- main -->
         <div id="main" class="w-100">
-            <div class="h-100 flex-column flex-md-row text-white">
+            <div class="h-100 flex-md-row text-white">
 <!-- main header -->
                 <div id="main_header">
                     <div class="container-fluid">
                         <div class="row flex-column flex-md-row py-2">
 
-                            <div class="col">
+                            <div class="col order-1 order order-md-0">
                                 <span class="h1">Boolean</span>
                                 <span class="badge badge_bg">Piano blaze</span>
                                 <div class="badges">
@@ -85,17 +85,144 @@
                                     <span class="badge badge_bg d-none d-lg-inline">Boolean blog app</span>
                             </div>
 
-                            
+                            <div class="col order-2 order-md-1">
+                                <p>Studenti online negli ultimi 30 minuti</p>
+                                <p class="fs-2">125</p>
+                            </div>
+
+                            <div class="col order-0 order-md-2">
+                                <p>Nuovo Studente</p>
+                                <button type="button" class="btn btn-outline-light text-white">+</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
+                </div>               
  <!-- /mainheader -->
-                <div class="main-content">
+
+                <div id="main_content">
                     <div class="container">
-                        <div class="row">
-                            <section class="color1 col-8"></section>
-                            <section class="color2 col-4"></section>
+                        <div class="row py-2">
+
+                            <section class="col-12 col-lg-8 mx-1">
+                                <div class="row">
+<!-- #region prossimeclassi -->
+                                    <div class="card text-black my-1">
+                                        <div class="card-header">
+                                            <h3>Prossime Classi</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <td scope="col">Nome</td>
+                                                        <td scope="col">Data inizio</td>
+                                                        <td scope="col">ROI</td>
+                                                        <td scope="col">Stato</td>
+                                                        <td scope="col">Azioni</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><i class="fa-solid fa-code orange_radius"></i> Classe 75</td>
+                                                        <td>15 feb 2021</td>
+                                                        <td>20%</td>
+                                                        <td><span class="badge done">Done</span></td>
+                                                        <td class="text-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="fa-solid fa-code orange_radius"></i> Classe 76</td>
+                                                        <td>16 feb 2021</td>
+                                                        <td>20%</td>
+                                                        <td><span class="badge done">Done</span></td>
+                                                        <td class="text-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="fa-solid fa-code orange_radius"></i> Classe 77</td>
+                                                        <td>17 feb 2021</td>
+                                                        <td>20%</td>
+                                                        <td><span class="badge process">Process</span></td>
+                                                        <td class="text-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="fa-solid fa-code orange_radius"></i> Classe 78</td>
+                                                        <td>18 feb 2021</td>
+                                                        <td>20%</td>
+                                                        <td><span class="badge done">Done</span></td>
+                                                        <td class="text-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="fa-solid fa-code orange_radius"></i> Classe 79</td>
+                                                        <td>19 feb 2021</td>
+                                                        <td>20%</td>
+                                                        <td><span class="badge failed">Failed</span></td>
+                                                        <td class="text-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="fa-solid fa-code orange_radius"></i> Classe 80</td>
+                                                        <td>20 feb 2021</td>
+                                                        <td>20%</td>
+                                                        <td><span class="badge process">Process</span></td>
+                                                        <td class="text-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="fa-solid fa-code orange_radius"></i> Classe 81</td>
+                                                        <td>21 feb 2021</td>
+                                                        <td>20%</td>
+                                                        <td><span class="badge failed">Failed</span></td>
+                                                        <td class="text-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="fa-solid fa-code orange_radius"></i> Classe 82</td>
+                                                        <td>22 feb 2021</td>
+                                                        <td>20%</td>
+                                                        <td><span class="badge done">Done</span></td>
+                                                        <td class="text-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                </table>
+                                        </div>
+                                    </div>
+<!-- #region faq -->
+                                    <div class="card">
+                                        <div class="card-header text-black">
+                                          <h3>Prossime Classi</h3>
+                                        </div>
+                                        <div class="card-body">
+                                          <h5 class="card-title">Special title treatment</h5>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </section>
+                            <section class="color2 col-12 col-lg-4 my-1"></section>
                         </div>
                     </div>
                 </div>

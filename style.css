@@ -7,11 +7,16 @@
 :root {
     --light: white;
     --dark: black;
-    --shadow: #f7f7f7;
+    --shadow: #cacaca;
     --primary: #1b72e8;
     --secondary: #051e34;
+    --backgroundmain: #f8f9fa;
     --badges: #165bba;
-    -notifications: #ff8f00;
+    --notifications: #ff8f00;
+    --codelogo: #f26551;
+    --done: #198754;
+    --process: #ffc107;
+    --failed: #dc3545;
 }
 
 .bg_badges {
@@ -44,11 +49,16 @@
     width: calc(100% - 70px);
     background-color: coral;
     height: 100%;
+    overflow-y: scroll;
 }
 
 #main_header {  
     color: var(--light);
     background-color: var(--primary);
+}
+
+#main_content {
+    background-color: var(--backgroundmain);
 }
 
 .ls_none {
@@ -59,13 +69,64 @@
     background-color: var(--badges);
 }
 
+.card-header {
+    background-color: var(--shadow);
+}
+
+.orange_radius {
+    color: var(--light);
+    background-color: var(--codelogo);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.done {
+    background-color: var(--done);
+}
+
+.process {
+    background-color: var(--process);
+}
+
+.failed {
+    background-color: var(--failed);
+}
+
+td {
+    text-align: center;
+}
+
+td:nth-child(1) {
+    text-align: left;
+    width: 35%;
+}
+
+td:nth-child(2) {
+    display: none;
+}
+
+td:nth-child(3) {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+        td:nth-child(2) {
+        display: table-cell;
+    }
+
+    td:nth-child(3) {
+        display: table-cell;
+    }
+}
+
 @media screen and (min-width: 992px) {
 
-    .wrapper>.sidebar {
+    #wrapper> #sidebar {
         width: 150px;
     }
 
-    .wrapper>.main {
+    #wrapper> #main {
         width: calc(100% - 150px);
     }
+
 }
