@@ -23,6 +23,10 @@
     background-color: var(--badges);
 }
 
+.ms_notification_color {
+    color: var(--notifications);
+}
+
 .color1 {
     background-color:darkcyan;
 }
@@ -90,6 +94,10 @@
 
 .failed {
     background-color: var(--failed);
+}
+
+.btn_reset {
+    background-color: var(--notifications);
 }
 
 td {

@@ -8,37 +8,38 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link rel="stylesheet" href="./style.css">
-    <title>Dashboard</title>
+    <title>Bootstrap Dashboard</title>
 </head>
 <body>
 
 <!-- #region navbar -->    
-    <nav id="site_nav" class="bg-light">
+    <nav id="site_nav" class="bg-light py-1">
         <div class="container-fluid my-1">
             <div class="row align-items-center justify-content-between">
 
-                <div class="col-2">
+                <div class="col-auto">
                     <img class="d-none navbar-brand mw-100 d-lg-flex" src="./img/logo.svg" alt="">
                     <img class="img-fluid d-lg-none" width="50px" src="./img/mobile-logo.png" alt="">
                 </div>
 
-                <div class="col-8">
+                <div class="col">
                     <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        </div>
-                        <input type="search" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                        <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
+
+                    </div>
+                      
                 </div>
 
-                <div class="col-2">
-                    <ul class="navbar-nav flex-row d-none d-sm-flex justify-content-end">
-                        <li><i class="fa-solid fa-list-ul "></i></li>
-                        <li><i class="fa-solid fa-circle-question px-2"></i></li>
-                        <li><i class="fa-solid fa-ellipsis-vertical px-2"></i></li>
-                        <li><i class="fa-solid fa-bell px-2"></i></li>
+                <div class="col-auto">
+                    <ul class="navbar-nav flex-row justify-content-end">
+                        <li><i class="fa-solid fa-list-ul px-2 d-none d-md-inline"></i></li>
+                        <li><i class="fa-solid fa-circle-question px-2 d-none d-md-inline"></i></li>
+                        <li><i class="fa-solid fa-ellipsis-vertical px-2 d-none d-md-inline"></i></li>
+                        <li><i class="fa-solid fa-bell px-2 ms_notification_color"></i></li>
                     </ul>
-                    <i class="fa-solid fa-bell px-2 d-sm-none"></i>
                 </div>
 
             </div>
@@ -50,7 +51,7 @@
     <div id="wrapper" class="d-flex">
 <!-- sidebaar -->
         <div id="sidebar" class="text-white d-flex flex-column g-0 justify-content-between justify-content-center">
-            <div id="sidebar_top" class="py-2">
+            <div id="sidebar_top" class="">
                 <ul class="ls_none row">
                     <li><i class="fa-solid fa-house my-2"></i><span class="d-none d-lg-inline"> Home</span></li>
                     <li><i class="fa-solid fa-chart-simple my-2"></i><span class="d-none d-lg-inline"> Stats</span></li>
@@ -93,7 +94,7 @@
 
                             <div class="col order-0 order-md-2">
                                 <p>Nuovo Studente</p>
-                                <button type="button" class="btn btn-outline-light text-white">+</button>
+                                <button type="button" class="btn btn-outline-light text-white" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">+</button>
                             </div>
                         </div>
                     </div>
@@ -103,7 +104,7 @@
                 <div id="main_content">
                     <div class="container">
                         <div class="row">
-
+<!-- first col -->
                             <div class="col-12 col-lg-8 my-1">
                                 <div class="container">
                                     <div class="row">
@@ -214,9 +215,10 @@
                                               <h3>F.A.Q.</h3>
                                             </div>
                                             <div class="accordion" id="accordionExample">
+
                                                 <div class="accordion-item">
                                                   <h2 class="accordion-header" id="headingOne">
-                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                       Come aggiungere un nuovo studente?
                                                     </button>
                                                   </h2>
@@ -226,6 +228,7 @@
                                                     </div>
                                                   </div>
                                                 </div>
+
                                                 <div class="accordion-item">
                                                   <h2 class="accordion-header" id="headingTwo">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -238,6 +241,7 @@
                                                     </div>
                                                   </div>
                                                 </div>
+
                                                 <div class="accordion-item">
                                                   <h2 class="accordion-header" id="headingThree">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -250,13 +254,15 @@
                                                     </div>
                                                   </div>
                                                 </div>
-                                              </div>
+
+                                            </div>
                                             
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
+<!-- second col -->
                             <div class="col-12 col-lg-4 my-1">
                                 <div class="container">
                                     <div class="row">
@@ -284,7 +290,7 @@
                                         </div>
     <!-- #region utenti attivi -->
                                         <div class="card p-0 my-1 text-black">
-                                            <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                                            <img src="./img/stats.jpeg" class="card-img-top p-1" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Utenti attivi</h5>
                                                 <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
@@ -310,6 +316,92 @@
         </div>
     </div>
     
+<!-- offcanvas -->
+    <div class="offcanvas offcanvas-end text-bg-dark w-50" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <form class="row">
+                    <!-- nome -->
+                    <div class="col-md-6">
+                        <label class="form-label">Nome</label>
+                        <input type="name" class="form-control" id="inputname4">
+                    </div>
+                    <!-- cognome -->
+                    <div class="col-md-6">
+                        <label class="form-label">Cognome</label>
+                        <input type="name" class="form-control" id="inputname4">
+                    </div>
+                    <!-- email -->
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" id="inputemail3">
+                        </div>
+                    </div>
+                    <!-- password -->
+                    <div class="col-md-6">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputname4">
+                    </div>
+                    <!-- indirizzo -->
+                    <div class="col-12">
+                        <label class="form-label">Indirizzo</label>
+                        <input type="name" class="form-control" id="inputname4">
+                    </div>
+                    <!-- citta -->
+                    <div class="col-6">
+                        <label class="form-label">Città</label>
+                        <input type="name" class="form-control">
+                    </div>
+                    <!-- stato -->
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Stato</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Scegli...</option>
+                            <option>Italia</option>
+                            <option>Spagna</option>
+                            <option>Francia</option>
+                            <option>Germania</option>
+                            <option>Inghilterra</option>
+                        </select>
+                    </div>
+                    <!-- cap -->
+                    <div class="col-md-2">
+                        <label class="form-label">CAP</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <!-- foto -->
+                    <!-- foto -->
+                    <div class="col-12">
+                        <label class="form-label" value="Scegli file">Foto</label>
+                        <input type="file" class="form-control">
+                    </div>
+                    <!-- select check-->
+                    <div class="col-12 my-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">Seleziona per proseguire</label>
+                        </div>
+                    </div>
+                    <!-- buttons -->
+                    <div class="col-12">
+                        <!-- Salva -->
+                        <button type="submit" class="btn btn-primary">Salva</button>
+                        <!-- Svuota -->
+                        <input class="btn btn_reset" type="reset" value="Svuota">
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
